@@ -1,0 +1,468 @@
+@charset "UTF-8";
+
+/* 全体に適用される設定 */
+
+html {
+    /* font-size: 62.5%; */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    /* text-align: center; */
+    /* font-size: 1.4rem; */
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    padding-top: 108px;
+}
+
+ul {
+    /* list-style-type: none; */
+}
+
+
+
+
+
+/* ナビゲーション */
+
+.navcolor {
+    /* background-color: rgb(249, 156, 71); */
+    background-color: rgba(255,255,255);
+    padding: 34px 16px;
+}
+
+.navbtn {
+    background-color: #019b44;
+    font-size: 80%;
+    padding: 12px;
+}
+
+.navbar-nav li {
+    word-break: keep-all;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+
+/* ナビゲーションのタブレット版 */
+@media screen and (max-width: 992px) {
+    .navcolor {
+        padding: 20px 16px;
+    }
+
+    .navbar-nav li {
+        text-align: center;
+    }
+
+}
+
+/* ナビゲーションのスマホ版 */
+@media screen and (max-width: 768px) {
+    .navbar-nav li {
+        text-align: left;
+    }
+}
+
+
+
+
+
+/* ヘッダー */
+
+header {
+    /* height: 700px; */
+    background-image: url(../img/tl\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+.top {
+    padding: 232px 0;
+}
+
+.top h1 {
+    font-size: 70px;
+}
+
+
+.top p {
+    margin: 0;
+    font-size: 40px;
+}
+
+
+
+/* ヘッダーのタブレット・スマホ版 */
+@media screen and (max-width: 992px) {
+    body {
+        padding-top: 80px;
+    }
+    
+    header {
+        /* height: 450px; */
+    }
+
+    .top {
+        padding: 138.5px 15px;
+    }
+
+    .top h1 {
+        font-size: 40px;
+    }
+    
+    
+    .top p {
+        margin: 0;
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+/* このサイトについて */
+
+.about {
+    /* height: 700px; */
+    background-color: tomato;
+    width: 100%;
+}
+
+.about-text {
+    padding: 263px 0;
+}
+
+.about-text h2 {
+    margin-bottom: 30px;
+}
+
+/* このサイトについてのタブレット版 */
+@media screen and (max-width: 992px) {
+    .about {
+        /* height: 450px; */
+    }
+    
+    .about-text {
+        padding: 138px 10px;
+        align-items: center;
+    }
+}
+
+/* このサイトについてのスマホ版 */
+@media screen and (max-width: 576px) {
+    .about {
+        /* height: 450px; */
+    }
+    
+    .about-text {
+        padding: 126px 10px;
+        align-items: center;
+    }
+}
+
+
+
+
+
+/* プロフィール */
+
+.profile {
+    /* height: 700px; */
+    background-color: green;
+    /* background-image: url(../img/tl\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%; */
+}
+
+.profile-content {
+    padding: 215px 15px;
+}
+
+.profile img {
+    display: block;
+    /* margin: 0 auto; */
+    /* border-radius: 50%; */
+    width: 100%;
+}
+
+.profile ul {
+    text-align: justify;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.img {
+    margin-right: 30px;
+}
+
+/* このサイトについてのタブレット版 */
+@media screen and (max-width: 992px) {
+    .profile-content {
+        padding: 138px 10px;
+        align-items: center;
+    }
+
+    .profile-img {
+        margin-bottom: 50px;
+    }
+}
+
+/* このサイトについてのスマホ版 */
+@media screen and (max-width: 768px) {
+    .profile-content {
+        padding: 126px 10px;
+        align-items: center;
+    }
+}
+
+
+
+
+/* スキル */
+
+.skill {
+    /* height: 430px; */
+    background-image: url(../img/newyork.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%; 
+    color: #fff;
+}
+
+.skill-content {
+    padding: 100px 16px;
+}
+
+.skill-header {
+    font-size: 40px;
+    word-break: keep-all;
+    color: goldenrod;
+}
+
+.icon {
+    font-size: 70px;
+    margin: 14px 0 30px;
+}
+
+
+
+/* 制作物 */
+
+.portfolio {
+    background-color: yellow;
+    padding: 50px 16px;
+    background-image: url(../img/programming.jpg);
+    color: #fff;
+}
+
+.portfolio h2 {
+    /* color: ; */
+}
+
+.portfolio-image {
+    /* width: 100%; */
+    height: 100%;
+    /* overflow: hidden; */
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-image p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    transform: translate(-50%,-50%);
+    word-break: keep-all;
+}
+
+.portfolio-image a:hover {
+    opacity: 0.8;
+}
+
+
+/* 制作物についてのタブレット版 */
+@media screen and (max-width: 992px) {
+    .portfolio {
+        padding: 40px 16px;
+    }
+
+}
+
+/* 制作物についてのスマホ版 */
+@media screen and (max-width: 768px) {
+    .portfolio {
+        padding: 30px 16px;
+    }
+
+    .portfolio-image p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+/* 料金表 */
+
+.price {
+    background-color: #212529;
+    padding: 50px 0;
+}
+
+.price h2 {
+    text-align: center;
+    padding: 0 0 50px;
+    color: #fff;
+}
+
+.table-header {
+    /* background: rgba(229, 238, 44, 0.52); */
+    background-color: springgreen;
+}
+
+.table tbody {
+    color: #fff;
+}
+
+tr>th,td {
+    text-align: center;
+}
+
+.table p {
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .table {
+        /* padding: 0 0px; */
+        /* max-width: 100%; */
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .table {
+        padding: 0 20px;
+        /* max-width: 100%; */
+    }
+
+}
+
+
+
+
+/* お問い合わせ */
+
+.contact {
+    background-color: teal;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    padding: 0 0 30px;
+    color: #fff;
+}
+
+.input-field {
+    margin: 0 auto;
+}
+
+.last-form-group {
+    margin-bottom: 0;
+}
+
+.form-group button {
+    margin: 20px 20px 0 20px;
+}
+
+
+
+
+
+/* フッター */
+
+.footer-01 {
+    background-color: bisque;
+    /* height: 500px; */
+    padding: 50px 50px 0;
+}
+
+.footer-01-content h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    word-break: keep-all;
+}
+
+.footer-menu {
+    padding: 30px;
+}
+
+.footer-menu h3 {
+    margin-bottom: 20px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu li a {
+    color: blue;
+}
+
+.footer-menu li a:hover {
+    opacity: 1;
+    color: red;
+    text-decoration: none;
+}
+
+.footer-02 {
+    text-align: center;
+    /* height: 80px; */
+}
+
+.footer-02 p {
+    padding: 30px;
+    font-size: 10px;
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-01 {
+        padding: 30px 0 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-01 {
+        padding: 30px 0;
+    }
+    
+    .footer-menu {
+        padding: 30px 30px 0;
+    }
+}

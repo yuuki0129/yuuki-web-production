@@ -2,9 +2,6 @@
 
 /* 全体に適用される設定 */
 
-html {
-    /* font-size: 62.5%; */
-}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -16,13 +13,6 @@ body {
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     padding-top: 108px;
 }
-
-ul {
-    /* list-style-type: none; */
-}
-
-
-
 
 
 /* ナビゲーション */
